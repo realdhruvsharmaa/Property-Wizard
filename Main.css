@@ -1,0 +1,60 @@
+*{margin: 0; font-family: Arial, Helvetica, sans-serif; border:border-box;}
+
+.Background-Sec{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background: url(Background_image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Selection-Box h1{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+a{
+    text-decoration: none; 
+    color:white; 
+}
+
+.Selection-Box{
+    width: 480px;
+    height: 540px;
+    background: transparent;
+    border: 2px solid rgba(255, 2, 2, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 12px;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+.Login-Options{
+    width: 80%;
+    height: 10%;
+    margin-top: 15%;
+    margin-left: 9.5%;
+    position: relative;
+    background: transparent;
+    border: 2px solid rgba(255, 2, 2, 0.2);
+    backdrop-filter: blur(50px);
+    color: white;
+    border-radius: 4cqmin;
+    outline: none;
+    font-size: 25px;
+}
+.Login-Options:hover{
+    transform: scale(1.1);
+    z-index: 10;
+}
+.Option{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    color: white;
+}
+
