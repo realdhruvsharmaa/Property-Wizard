@@ -25,7 +25,7 @@ public class UserDAO {
 		// TODO Auto-generated constructor stub
 	}
 
-	private Connection getConnection() throws SQLException {
+	public Connection getConnection() throws SQLException {
         return DriverManager.getConnection(jdbcURL, jdbcUserName, jdbcPassword);
     }
 
@@ -102,7 +102,7 @@ public class UserDAO {
     }
 
     
-    public List<User> getAllUsers() {
+    public List<User> selectAllUsers() {
         List<User> userList = new ArrayList<>();
         String sql = "SELECT * FROM users";
         try (Connection conn = getConnection(); Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery(sql)) {
@@ -122,4 +122,9 @@ public class UserDAO {
         }
         return userList;
     }
+
+	public User selectUser(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
